@@ -9,7 +9,7 @@ char **get_command(void)
 {
     char **command = NULL;
     char *fcommand = NULL;
-    size_t size = 0;
+    size_t size = 1024;
     int i = 0;
 
     getline(&fcommand, &size, stdin);
